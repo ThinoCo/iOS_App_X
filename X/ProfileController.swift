@@ -1,5 +1,5 @@
 //
-//  UserCenterController.swift
+//  ProfileController.swift
 //  X
 //
 //  Created by Kevin Hsiao on 2024/4/25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserCenterController: BaseViewController {
+class ProfileController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

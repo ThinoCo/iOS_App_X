@@ -28,9 +28,9 @@ class BaseTabBarController: UITabBarController {
         loginVC.tabBarItem = UITabBarItem(title: "Login", image: nil, selectedImage: nil)
         let loginNav = BaseNavigationController(rootViewController: loginVC)
 
-        let userCenterVC = UserCenterController()
-        userCenterVC.tabBarItem = UITabBarItem(title: "UserCenter", image: nil, selectedImage: nil)
-        let userCenterNav = BaseNavigationController(rootViewController: userCenterVC)
+        let profileVC = ProfileController()
+        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: nil, selectedImage: nil)
+        let userCenterNav = BaseNavigationController(rootViewController: profileVC)
 
         self.viewControllers = [loginNav]
     }
