@@ -12,9 +12,14 @@
 		01CB09282BDA848A00490B4D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB09272BDA848A00490B4D /* BaseNavigationController.swift */; };
 		01CB092A2BDA857B00490B4D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB09292BDA857B00490B4D /* ProfileController.swift */; };
 		01CB092C2BDA859100490B4D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB092B2BDA859100490B4D /* LoginController.swift */; };
+		01CB09302BDB614D00490B4D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB092F2BDB614D00490B4D /* BaseButton.swift */; };
+		01CB09342BDB629000490B4D /* Callbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB09332BDB629000490B4D /* Callbacks.swift */; };
+		01CB09392BDB677300490B4D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB09382BDB677300490B4D /* UIView+.swift */; };
+		01CB093B2BDB6CBD00490B4D /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB093A2BDB6CBD00490B4D /* UIButton+.swift */; };
+		01CB09412BDDFCB000490B4D /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB09402BDDFCB000490B4D /* SettingController.swift */; };
+		01CB09442BDE863100490B4D /* ConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CB09432BDE863100490B4D /* ConfigModel.swift */; };
 		01FA3DB32BDA5A92005BD684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA3DB22BDA5A92005BD684 /* AppDelegate.swift */; };
 		01FA3DB52BDA5A92005BD684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA3DB42BDA5A92005BD684 /* SceneDelegate.swift */; };
-		01FA3DB72BDA5A92005BD684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA3DB62BDA5A92005BD684 /* ViewController.swift */; };
 		01FA3DBA2BDA5A92005BD684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FA3DB82BDA5A92005BD684 /* Main.storyboard */; };
 		01FA3DBC2BDA5A94005BD684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FA3DBB2BDA5A94005BD684 /* Assets.xcassets */; };
 		01FA3DBF2BDA5A94005BD684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FA3DBD2BDA5A94005BD684 /* LaunchScreen.storyboard */; };
@@ -27,10 +32,15 @@
 		01CB09272BDA848A00490B4D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		01CB09292BDA857B00490B4D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		01CB092B2BDA859100490B4D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		01CB092F2BDB614D00490B4D /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		01CB09332BDB629000490B4D /* Callbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callbacks.swift; sourceTree = "<group>"; };
+		01CB09382BDB677300490B4D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		01CB093A2BDB6CBD00490B4D /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		01CB09402BDDFCB000490B4D /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		01CB09432BDE863100490B4D /* ConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModel.swift; sourceTree = "<group>"; };
 		01FA3DAF2BDA5A92005BD684 /* X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FA3DB22BDA5A92005BD684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01FA3DB42BDA5A92005BD684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01FA3DB62BDA5A92005BD684 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01FA3DB92BDA5A92005BD684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01FA3DBB2BDA5A94005BD684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01FA3DBE2BDA5A94005BD684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,8 +65,58 @@
 		01CB092D2BDA8A5E00490B4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01CB092E2BDB612600490B4D /* UIButton */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		01CB092E2BDB612600490B4D /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				01CB092F2BDB614D00490B4D /* BaseButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		01CB09312BDB624200490B4D /* Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				01CB09322BDB625A00490B4D /* Callbacks */,
+			);
+			path = Typealias;
+			sourceTree = "<group>";
+		};
+		01CB09322BDB625A00490B4D /* Callbacks */ = {
+			isa = PBXGroup;
+			children = (
+				01CB09332BDB629000490B4D /* Callbacks.swift */,
+			);
+			path = Callbacks;
+			sourceTree = "<group>";
+		};
+		01CB09362BDB673900490B4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01CB09372BDB674A00490B4D /* UIView+ */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		01CB09372BDB674A00490B4D /* UIView+ */ = {
+			isa = PBXGroup;
+			children = (
+				01CB09382BDB677300490B4D /* UIView+.swift */,
+				01CB093A2BDB6CBD00490B4D /* UIButton+.swift */,
+			);
+			path = "UIView+";
+			sourceTree = "<group>";
+		};
+		01CB09422BDE860E00490B4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01CB09432BDE863100490B4D /* ConfigModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		01FA3DA62BDA5A92005BD684 = {
@@ -80,10 +140,12 @@
 		01FA3DB12BDA5A92005BD684 /* X */ = {
 			isa = PBXGroup;
 			children = (
+				01CB09422BDE860E00490B4D /* Models */,
+				01CB09362BDB673900490B4D /* Extensions */,
+				01CB09312BDB624200490B4D /* Typealias */,
 				01CB092D2BDA8A5E00490B4D /* Views */,
 				01FA3DB22BDA5A92005BD684 /* AppDelegate.swift */,
 				01FA3DB42BDA5A92005BD684 /* SceneDelegate.swift */,
-				01FA3DB62BDA5A92005BD684 /* ViewController.swift */,
 				01FA3DB82BDA5A92005BD684 /* Main.storyboard */,
 				01FA3DBB2BDA5A94005BD684 /* Assets.xcassets */,
 				01FA3DBD2BDA5A94005BD684 /* LaunchScreen.storyboard */,
@@ -93,6 +155,7 @@
 				01CB09272BDA848A00490B4D /* BaseNavigationController.swift */,
 				01CB09292BDA857B00490B4D /* ProfileController.swift */,
 				01CB092B2BDA859100490B4D /* LoginController.swift */,
+				01CB09402BDDFCB000490B4D /* SettingController.swift */,
 			);
 			path = X;
 			sourceTree = "<group>";
@@ -230,11 +293,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01FA3DB72BDA5A92005BD684 /* ViewController.swift in Sources */,
+				01CB09412BDDFCB000490B4D /* SettingController.swift in Sources */,
 				01CB09242BDA7F8800490B4D /* BaseViewController.swift in Sources */,
 				01FA3DB32BDA5A92005BD684 /* AppDelegate.swift in Sources */,
 				01CB09262BDA845F00490B4D /* BaseTabBarController.swift in Sources */,
+				01CB09442BDE863100490B4D /* ConfigModel.swift in Sources */,
+				01CB09302BDB614D00490B4D /* BaseButton.swift in Sources */,
+				01CB09392BDB677300490B4D /* UIView+.swift in Sources */,
 				01CB09282BDA848A00490B4D /* BaseNavigationController.swift in Sources */,
+				01CB09342BDB629000490B4D /* Callbacks.swift in Sources */,
+				01CB093B2BDB6CBD00490B4D /* UIButton+.swift in Sources */,
 				01CB092C2BDA859100490B4D /* LoginController.swift in Sources */,
 				01CB092A2BDA857B00490B4D /* ProfileController.swift in Sources */,
 				01FA3DB52BDA5A92005BD684 /* SceneDelegate.swift in Sources */,

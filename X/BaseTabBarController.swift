@@ -25,14 +25,15 @@ class BaseTabBarController: UITabBarController {
 
     func setupControllers() {
         let loginVC = LoginController()
-        loginVC.tabBarItem = UITabBarItem(title: "Login", image: nil, selectedImage: nil)
         let loginNav = BaseNavigationController(rootViewController: loginVC)
 
         let profileVC = ProfileController()
-        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: nil, selectedImage: nil)
-        let userCenterNav = BaseNavigationController(rootViewController: profileVC)
+        let profileNav = BaseNavigationController(rootViewController: profileVC)
 
-        self.viewControllers = [loginNav]
+        let settingVC = SettingController()
+        let settingNav = BaseNavigationController(rootViewController: settingVC)
+        
+        self.viewControllers = [loginNav, settingNav, profileNav]
     }
 
 }

@@ -44,7 +44,8 @@ class LoginController: BaseViewController {
         }
 
         self.loginBtn.snp.remakeConstraints { make in
-            make.size.equalTo(self.loginBtn.bounds.size)
+            make.leading.trailing.height.equalTo(self.hostTF)
+            make.height.equalTo(40)
             make.centerX.equalToSuperview()
             make.top.equalTo(passwordTF.snp.bottom).offset(40)
         }
@@ -54,21 +55,19 @@ class LoginController: BaseViewController {
         self.view.endEditing(true)
     }
 
-    @objc func loginBtnDidClick() {
-        self.view.endEditing(true)
-        if let host = self.hostTF.text, let userName = self.userNameTF.text, let password = self.passwordTF.text {
-            self.view.makeToast("Connecting: \(host) \(userName) \(password)", duration: 3, position: .center)
+    private lazy var loginBtn: BaseButton = {
+        let btn = BaseButton()
+        btn.touchUpInsideCallback = { [weak self] in
+            guard let `self` = self else { return }
+            self.view.endEditing(true)
+            if let host = self.hostTF.text, let userName = self.userNameTF.text, let password = self.passwordTF.text {
+                self.view.makeToast("Connecting: \(host) \(userName) \(password)", duration: 3, position: .center)
+            }
         }
-    }
-
-    private lazy var loginBtn: UIButton = {
-        let btn = UIButton(type: .custom)
-        btn.backgroundColor = .white
-        btn.addTarget(self, action: #selector(loginBtnDidClick), for: .touchUpInside)
-        btn.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
-        btn.setTitle("Connect", for: .normal)
-        btn.setTitleColor(.red, for: .normal)
-        btn.sizeToFit()
+        btn.titleFont = .systemFont(ofSize: 16, weight: .bold)
+        btn.normalTitle = "Connect"
+        btn.setBorder(radius: 8)
+        btn.backgroundColor = .lightGray
         return btn
     }()
 
