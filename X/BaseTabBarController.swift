@@ -25,15 +25,22 @@ class BaseTabBarController: UITabBarController {
 
     func setupControllers() {
         let loginVC = LoginController()
+        loginVC.title = "Login"
         let loginNav = BaseNavigationController(rootViewController: loginVC)
 
         let profileVC = ProfileController()
+        profileVC.title = "Profile"
         let profileNav = BaseNavigationController(rootViewController: profileVC)
 
+        let mapVC = MapController()
+        mapVC.title = "Map"
+        let mapNav = BaseNavigationController(rootViewController: mapVC)
+
         let settingVC = SettingController()
+        settingVC.title = "Setting"
         let settingNav = BaseNavigationController(rootViewController: settingVC)
         
-        self.viewControllers = [loginNav, settingNav, profileNav]
+        self.viewControllers = [loginNav, settingNav, mapNav, profileNav]
     }
 
 }

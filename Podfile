@@ -38,6 +38,8 @@ target 'X' do
   pod 'Toast-Swift'
   # socket
   pod 'Starscream'
+  # 高德2D地图
+  pod 'AMap2DMap'
 
 end
 
